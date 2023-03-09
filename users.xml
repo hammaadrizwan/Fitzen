@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="leaderboard.xsl"?>
+<users>
+  <user>
+    <fname>John</fname>
+    <lname>Doe</lname>
+    <age>25</age>
+    <email>john.doe@example.com</email>
+    <password>password123</password>
+    <occupation>Web Developer</occupation>
+    <numberOfMeals>3</numberOfMeals>
+    <workoutTime>evening</workoutTime>
+    <physicalActivity>Moderate</physicalActivity>
+    <points>47</points>
+  </user>
+  <user>
+    <fname>Jane</fname>
+    <lname>Smith</lname>
+    <age>32</age>
+    <email>jane.smith@example.com</email>
+    <password>smith123</password>
+    <occupation>Marketing Manager</occupation>
+    <numberOfMeals>4</numberOfMeals>
+    <workoutTime>morning</workoutTime>
+    <physicalActivity>High</physicalActivity>
+    <points>68</points>
+  </user>
+  <user>
+    <fname>Alice</fname>
+    <lname>Johnson</lname>
+    <age>27</age>
+    <email>alice.johnson@example.com</email>
+    <password>johnson123</password>
+    <occupation>Graphic Designer</occupation>
+    <numberOfMeals>2</numberOfMeals>
+    <workoutTime>afternoon</workoutTime>
+    <physicalActivity>Low</physicalActivity>
+    <points>99</points>
+  </user>
+  <user>
+    <fname>Michael</fname>
+    <lname>Smith</lname>
+    <age>29</age>
+    <email>michael.smith@example.com</email>
+    <password>smith456</password>
+    <occupation>Software Engineer</occupation>
+    <numberOfMeals>3</numberOfMeals>
+    <workoutTime>evening</workoutTime>
+    <physicalActivity>Moderate</physicalActivity>
+    <points>91</points>
+  </user>
+  <user>
+    <fname>Laura</fname>
+    <lname>Williams</lname>
+    <age>31</age>
+    <email>laura.williams@example.com</email>
+    <password>williams123</password>
+    <occupation>Teacher</occupation>
+    <numberOfMeals>2</numberOfMeals>
+    <workoutTime>morning</workoutTime>
+    <physicalActivity>Moderate</physicalActivity>
+    <points>4</points>
+  </user>
+</users>
+

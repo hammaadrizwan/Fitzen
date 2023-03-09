@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leaderboard</title>
+  </head>
+  <body>
+    <table id="leaderboard">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Points</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <script>
+      function loadXMLDoc(filename, callback) {
+        fetch(filename)
+          .then(response => response.text())
+          .then(data => {
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(data, "text/xml");
+            callback(xmlDoc);
+          })
+          .catch(error => console.error(error));
+      }
+
+      function displayLeaderboard(xml) {
+        const tbody = document.querySelector("#leaderboard tbody");
+        const users = xml.getElementsByTagName("user");
+        const usersArray = Array.from(users);
+
+        usersArray.sort((a, b) => {
+          const aPoints = parseInt(a.getElementsByTagName("points")[0].textContent);
+          const bPoints = parseInt(b.getElementsByTagName("points")[0].textContent);
+          return bPoints - aPoints;
+        });
+
+        usersArray.forEach(user => {
+          const fname = user.getElementsByTagName("fname")[0].textContent;
+          const lname = user.getElementsByTagName("lname")[0].textContent;
+          const points = user.getElementsByTagName("points")[0].textContent;
+
+          const tr = document.createElement("tr");
+          const tdName= document.createElement("td");
+          const tdPoints = document.createElement("td");
+
+          tdName.textContent = fname+" "+lname;
+          //tdLname.textContent = lname;
+          tdPoints.textContent = points;
+
+          tr.appendChild(tdName);
+          tr.appendChild(tdPoints);
+
+          tbody.appendChild(tr);
+        });
+      }
+
+      loadXMLDoc("users.xml", displayLeaderboard);
+    </script>
+  </body>
+</html>
