@@ -1,0 +1,217 @@
+
+.heading, .logo,.button-section{
+    display: inline-block;
+    
+}
+
+@font-face {
+    font-family: Integral CF Main Heading;
+    src: url(Demo_Fonts/Fontspring-DEMO-integralcf-bold.otf);
+}
+
+@font-face {
+    font-family: Integral CF;
+    src: url(Demo_Fonts/Fontspring-DEMO-integralcf-demiboldoblique.otf);
+}
+
+.h1{
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+.slogan-pic{
+  margin-left: 210px;
+}
+
+.heading{
+    margin-left: 100px;
+    margin-right: 120px;
+    position: relative;
+    top: -27px;
+    font-family:"Integral CF Main Heading";
+    font-size: larger;
+    
+}
+.button-section{
+    margin-left: 50px;
+    position: relative;
+    top: -34px;
+}
+
+.button-text{
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+    font-family: Integral CF Main Heading;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 10px;
+}
+.button-text :hover{
+    color:black;
+    border: 2px;
+    opacity:  0.8;
+    transition-duration: 0.1s;
+}
+.navi-buttons{
+    border: none;
+    background-color:white;
+    color: grey;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+.navi-buttons :hover{
+    color:black;
+    border: 2px;
+    opacity:  0.8;
+    transition-duration: 0.1s;
+}
+.navi-buttons :active{
+    color:rgb(6, 103, 110);
+    opacity: 0.60;
+    transition-duration: 0.1s;
+}
+
+.signup-button{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 10px;
+    margin-right: px;
+    position: relative;
+    margin-left: 40px;
+}
+.signup-button :hover{
+    color: #000;
+    transition-duration: 0.2s;
+    
+}
+
+
+form {
+	width: 60%;
+	margin: 60px ;
+	
+  }
+
+  .form-group {
+	margin: none;
+	font-size: 18px;
+	padding:10px; 
+	width:200px;
+	
+  }
+
+  label {
+	display: block;
+	margin-bottom: 5px;
+	font-family:'Integral CF',sans-serif;
+	
+  }
+
+  input, select, textarea {
+	width: 30%;
+	padding: 0.5rem;
+	font-size: 20px;
+  }
+
+#name{
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid black;
+  width:500px;
+  outline:none;
+  margin-bottom:20px;
+  
+  
+}
+#name:active{
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid white;
+}
+
+button[type="submit"] {
+width: 53%;
+padding: 10px;
+background-color: black;
+color: white;
+font-size: 24px;
+cursor:pointer;
+margin: 20px auto;
+display: block;
+margin-left:11px;
+}
+
+#email{
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid black;
+  margin: none;
+  width:500px;
+  padding:none;
+  outline:none;
+  
+}
+body{
+  margin:0px;
+  padding:0px; 
+  background-image: url("newsLetterBg.png");
+  background-position: fixed;
+  background-size: cover;
+
+}
+
+
+.login-container {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	margin-left:15px;
+	text-decoration: none;
+}
+
+.login-container p {
+	margin-right: 10px;
+	font-family:'Integral CF',sans-serif;
+	margin-top:5px;
+}
+
+.login-container a{
+	color:black;
+	text-decoration: none;
+	font-family:'Integral CF',sans-serif;
+	margin-top:-11px;
+}
+
+.logo-pic{
+	margin-top:20px;
+	margin-left:10px;
+}
+
+.back-groundElements{
+    margin-top: 240px;
+	margin-left: 51px;
+
+	margin-bottom:-80px;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-left: 70px;
+    margin-top: -100px;
+}
+.editors-Page{
+    margin-left: 60px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+}

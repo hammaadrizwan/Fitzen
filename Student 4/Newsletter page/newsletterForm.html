@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter</title>
+  <link rel = "stylesheet" type = "text/css" href = "newsletterForm.css">
+
+</head>
+<body>
+  
+  <header>
+    <div class="logo">
+      <img class="logo-pic" src="logo.png" alt="logo">
+    </div>
+    <div class="heading">
+      <h1>FITZEN</h1>
+    </div>
+    <div class="button-section">
+	  <button class="navi-buttons">
+		<a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%203/Online%20store/Buying%20product.html" target="_blank">Online store</a>
+	  </button>
+	  <button class="navi-buttons">
+		  <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%204/My%20List%20page/mylist.html" target="_blank">My list </a>
+	  </button>
+	  <button class="navi-buttons">
+		  <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%201/Gallery%20page/gallerypage.html" target="_blank">Healthy foods</a>
+	  </button>
+	  <button class="signup-button" >
+		  <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%201/Sign%20up%20page/signupPageUpdated.html" target="_blank">Signup login</a>
+	  </button>
+	</div>
+</header>
+<br>
+      
+    </div>
+      <div class="Background-image"></div>
+	    <br>
+		  <br>
+      <div class="back-groundElements">
+        
+          <form id="newsLetter-form">
+            
+            <div class="form-group">
+              <label for="name">NAME:</label>
+              <input type="text" id="name" name="name" >
+            </div>
+
+            <div class="form-group">
+              <label for="email">EMAIL:</label>
+              <input type="email" id="email" name="email" >
+            </div>
+            <button type="submit">SUBSCRIBE </button>
+            
+          </form>
+      </div>
+    
+
+    <script>
+
+      const newsLetterForm = document.getElementById("newsLetter-form");
+      const subscribeButton = document.querySelector("#newsLetter-form button[type='submit']");
+      const newsLetterPage = document.getElementById("newsLetter-form");
+      newsLetterForm.addEventListener("submit", (e) => {
+
+			e.preventDefault();
+
+      const name = newsLetterForm.elements["name"].value
+      const fname = newsLetterForm.elements["name"].value;
+      const email = newsLetterForm.elements["email"].value;
+      const nameRegex = /^[A-Za-z]+$/;
+			
+      if (fname==="" || email === "") {
+				alert("Please fill out all required fields");
+				return;
+			}
+
+      if (name.split(" ").length>=2){
+				alert("Enter your firstname");
+				return;
+			}
+
+
+      if (!nameRegex.test(fname)) {
+				alert("Name should contain only letters");
+				return;
+			}
+			
+      alert("Dear "+ newsLetterForm.elements["name"].value.split(" ")[0]+", you have successfully subscribed for a personalized newsletter.");
+			});
+    </script>
+
+    </div>
+      
+  </body>
+  <footer>
+    <button class="editors-Page" >
+      <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%204/Editors%20page/EditorsPageHammaad.html" target="_blank">Editors Page</a>
+    </button>
+  </footer>
+</html>

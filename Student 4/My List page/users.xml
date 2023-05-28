@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+  <user>
+    <fname>John</fname>
+    <lname>Doe</lname>
+    <age>25</age>
+    <email>john.doe@example.com</email>
+    <password>password123</password>
+    <occupation>Web Developer</occupation>
+    <numberOfMeals>3</numberOfMeals>
+    <workoutTime>evening</workoutTime>
+    <physicalActivity>Moderate</physicalActivity>
+    <points>47</points>
+  </user>
+  <user>
+    <fname>Jane</fname>
+    <lname>Smith</lname>
+    <age>32</age>
+    <email>jane.smith@example.com</email>
+    <password>smith123</password>
+    <occupation>Marketing Manager</occupation>
+    <numberOfMeals>4</numberOfMeals>
+    <workoutTime>morning</workoutTime>
+    <physicalActivity>High</physicalActivity>
+    <points>68</points>
+  </user>
+  <user>
+    <fname>Alice</fname>
+    <lname>Johnson</lname>
+    <age>27</age>
+    <email>alice.johnson@example.com</email>
+    <password>johnson123</password>
+    <occupation>Graphic Designer</occupation>
+    <numberOfMeals>2</numberOfMeals>
+    <workoutTime>afternoon</workoutTime>
+    <physicalActivity>Low</physicalActivity>
+    <points>99</points>
+  </user>
+  <user>
+    <fname>Michael</fname>
+    <lname>Smith</lname>
+    <age>29</age>
+    <email>michael.smith@example.com</email>
+    <password>smith456</password>
+    <occupation>Software Engineer</occupation>
+    <numberOfMeals>3</numberOfMeals>
+    <workoutTime>evening</workoutTime>
+    <physicalActivity>Moderate</physicalActivity>
+    <points>91</points>
+  </user>
+  <user>
+    <fname>Laura</fname>
+    <lname>Williams</lname>
+    <age>31</age>
+    <email>laura.williams@example.com</email>
+    <password>williams123</password>
+    <occupation>Teacher</occupation>
+    <numberOfMeals>2</numberOfMeals>
+    <workoutTime>morning</workoutTime>
+    <physicalActivity>Moderate</physicalActivity>
+    <points>4</points>
+  </user>
+  <user>
+    <fname>David</fname>
+    <lname>Lee</lname>
+    <age>28</age>
+    <email>david.lee@example.com</email>
+    <password>lee123</password>
+    <occupation>Accountant</occupation>
+    <numberOfMeals>3</numberOfMeals>
+    <workoutTime>evening</workoutTime>
+    <physicalActivity>Low</physicalActivity>
+    <points>56</points>
+  </user>
+
+  <user>
+    <fname>Emily</fname>
+    <lname>Nguyen</lname>
+    <age>26</age>
+    <email>emily.nguyen@example.com</email>
+    <password>nguyen123</password>
+    <occupation>Graphic Designer</occupation>
+    <numberOfMeals>2</numberOfMeals>
+    <workoutTime>morning</workoutTime>
+    <physicalActivity>Moderate</physicalActivity>
+    <points>87</points>
+  </user>
+
+  <user>
+    <fname>William</fname>
+    <lname>Clark</lname>
+    <age>30</age>
+    <email>william.clark@example.com</email>
+    <password>clark123</password>
+    <occupation>Software Engineer</occupation>
+    <numberOfMeals>3</numberOfMeals>
+    <workoutTime>evening</workoutTime>
+    <physicalActivity>High</physicalActivity>
+    <points>72</points>
+  </user>
+
+  <user>
+    <fname>Samantha</fname>
+    <lname>Wong</lname>
+    <age>29</age>
+    <email>samantha.wong@example.com</email>
+    <password>wong123</password>
+    <occupation>Marketing Manager</occupation>
+    <numberOfMeals>4</numberOfMeals>
+    <workoutTime>afternoon</workoutTime>
+    <physicalActivity>Low</physicalActivity>
+    <points>93</points>
+  </user>
+
+  <user>
+    <fname>Jason</fname>
+    <lname>Kim</lname>
+    <age>27</age>
+    <email>jason.kim@example.com</email>
+    <password>kim123</password>
+    <occupation>Web Developer</occupation>
+    <numberOfMeals>2</numberOfMeals>
+    <workoutTime>evening</workoutTime>
+    <physicalActivity>Moderate</physicalActivity>
+    <points>61</points>
+  </user>
+
+</users>
+

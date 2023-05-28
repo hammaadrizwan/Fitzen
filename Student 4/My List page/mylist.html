@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" type="text/css" href="mylist.css">
+  
+    <script>
+      function changeColors() {
+        const backgroundColor = document.getElementById("background-color").value;
+        const textColor = document.getElementById("text-color").value
+        const myListElement = document.querySelector('#myListPageBody');
+        myListElement.style.backgroundColor = backgroundColor;
+        myListElement.style.color = textColor;
+      }
+
+      function loadXMLDoc(filename, callback) {
+        fetch(filename)//fins the file
+          .then(response => response.text())
+          .then(data => {
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(data, "text/xml");
+            callback(xmlDoc);
+          })
+          .catch(error => console.error(error));
+      }
+    
+
+      function displayLeaderboard(xml) {
+        const tbody = document.querySelector("#myListLeaderboard tbody");
+
+        const users = xml.getElementsByTagName("user");
+
+        const usersArray = Array.from(users);
+
+        usersArray.sort((current, next) => {//sorting the users array based on points
+          const currentPoints = parseInt(current.getElementsByTagName("points")[0].textContent);
+          const nextPoints = parseInt(next.getElementsByTagName("points")[0].textContent);
+          return nextPoints - currentPoints;
+        });
+
+        usersArray.forEach(user => {
+          //To display the table in the HTML site takes only 3 fields to display
+          const fname = user.getElementsByTagName("fname")[0].textContent;
+          const lname = user.getElementsByTagName("lname")[0].textContent;
+          const points = user.getElementsByTagName("points")[0].textContent;
+          const tableRow = document.createElement("tr");//new table row
+          const tableDataName= document.createElement("td");//t2 new table data name, and points
+          const tableDataPoints = document.createElement("td");
+          
+          tableDataName.textContent = fname+" "+lname;// name is collection of fname and lname
+          
+          tableDataPoints.textContent = points;
+
+          tableRow.appendChild(tableDataName);//adds the name and the points of that user to the table row
+          tableRow.appendChild(tableDataPoints);
+
+          tbody.appendChild(tableRow);//the table row is being added to the table body in the mylist page
+        });//this is done for every user in the users array.
+      }
+      loadXMLDoc("users.xml", displayLeaderboard);// to load the XML data and then calls the display leaderboard function
+    </script>
+
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="logo">
+
+      <img class="logo-pic" src="logo.png" alt="logo">
+
+    </div>
+
+    <div class="heading">
+
+      <h1>FITZEN</h1>
+
+    </div>
+
+    <div class="button-section">
+	  <button class="navi-buttons">
+		<a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%203/Online%20store/Buying%20product.html" target="_blank">Online store</a>
+	  </button>
+	  <button class="navi-buttons">
+		  <a class="button-text" href="#" target="_blank">My list </a>
+	  </button>
+	  <button class="navi-buttons">
+		  <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%201/Gallery%20page/gallerypage.html" target="_blank">Healthy foods</a>
+	  </button>
+	  <button class="signup-button" >
+		  <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%201/Sign%20up%20page/signupPageUpdated.html" target="_blank">Signup login</a>
+	  </button>
+	</div>
+
+    </div>
+
+</header>
+
+  <br>
+
+<div id=myListPageBody>
+
+  <div id="myListLeadeboardTable">
+
+    <table id="myListLeaderboard" style="padding:3px;margin:1px;">
+
+      <thead>
+
+        <tr>
+
+          <th>USERNAME</th>
+
+          <th>POINTS</th>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+  
+
+
+
+
+  <div class="stylingBodyButtons">
+
+    <div class="changingText">
+
+      <label for="background-color">Background color:</label>
+
+      <select id="background-color" onchange="changeColors()">
+
+        <option value="white">White</option>
+
+        <option value="lightblue">Light Blue</option>
+
+        <option value="pink">Pink</option>
+
+      </select>
+
+    </div>
+
+    
+
+    <div class="changingText">
+
+      <label for="text-color">Text color:</label>
+
+      <select id="text-color" onchange="changeColors()">
+
+        <option value="black">Black</option>
+
+        <option value=#DD571c>Orange</option>
+
+        <option value="darkgreen">Green</option>
+
+
+      </select>
+
+    </div>
+
+  
+
+    <div class="changingText">
+
+        <button id="newsletterButton">
+
+          <a class="button-text" href="C:\Users\LAKIDU\Downloads\Web technology assignment\Student 4\Newsletter page\newsletterForm.html" >Signup for our Newsletter</a>
+
+        </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+
+  <p class="footer-text">Copyright &copy; 2023 FITZEN</p>
+
+  <div class="footer-buttons">
+
+
+
+  <button class="navi-buttons">
+
+    <a class="button-text" href="C:\Users\LAKIDU\Downloads\Web technology assignment\Student 4\Editors page\EditorsPageHammaad.html">editor page</a>
+
+  </button>
+
+  </div>
+
+</footer>
+
+
+
+</body>
+
+
+
+</html>

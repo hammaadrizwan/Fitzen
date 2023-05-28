@@ -1,0 +1,191 @@
+.heading, .logo,.button-section{
+    display: inline-block;
+}
+
+.h1{
+    margin-top: 0%;
+    padding-top: 0%;
+}
+.heading{
+    margin-left: 90px;
+    margin-right: 50px;
+    position: relative;
+    top: -27px;
+    font-family:"Integral CF Main Heading";
+    font-size: larger;
+    
+}
+.button-section{
+    margin-left: 50px;
+    position: relative;
+    top: -27px;
+}
+.button-text{
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+    font-family: Integral CF Main Heading;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 10px;
+}
+.button-text :hover{
+    color:black;
+    border: 2px;
+    opacity:  0.8;
+    transition-duration: 0.1s;
+}
+.navi-buttons{
+    border: none;
+    background-color:white;
+    color: grey;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+.navi-buttons :hover{
+    color:black;
+    border: 2px;
+    opacity:  0.8;
+    transition-duration: 0.1s;
+}
+.navi-buttons :active{
+    color:rgb(6, 103, 110);
+    opacity: 0.60;
+    transition-duration: 0.1s;
+}
+
+.signup-button{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 10px;
+    margin-right: px;
+    position: relative;
+    margin-left: 40px;
+}
+.signup-button :hover{
+    color: #000;
+    transition-duration: 0.2s;
+    
+}
+@font-face {
+    font-family: Integral CF Main Heading;
+    src: url(Demo_Fonts/Fontspring-DEMO-integralcf-bold.otf);
+}
+@font-face {
+    font-family: Integral CF;
+    src: url(Demo_Fonts/Fontspring-DEMO-integralcf-demiboldoblique.otf);
+}
+.login-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left:15px;
+  text-decoration: none;
+}
+
+.login-container p {
+  margin-right: 10px;
+  font-family:'Integral CF',sans-serif;
+  margin-top:5px;
+}
+
+.login-container a{
+  color:black;
+  text-decoration: none;
+  font-family:'Integral CF',sans-serif;
+  margin-top:-11px;
+}
+
+.logo-pic{
+  margin-top:20px;
+  margin-left:10px;
+}
+  #myListLeadeboardTable{
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  #myListLeaderboard {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  
+  }
+
+  #myListLeaderboard td, #myListLeaderboard th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 90%;
+    
+  }
+
+  #myListLeaderboard tr th {
+    text-align: center;
+  }
+
+
+  #myListLeaderboard tr:nth-child(1){background-color: #23aabc58;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+  #myListLeaderboard tr:hover {background-color: #ddd;}
+
+  #myListLeaderboard th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #232d2fde;
+    color: rgb(255, 183, 0);
+    font-family:Integral CF Main Heading
+  }
+
+  .changingText{
+    display: inline;
+    margin-left: 70px;
+  }
+  .stylingBodyButtons{
+    margin-top: 25px;
+    margin-left: 350px;
+    margin-right: 0px;
+  }
+  .editors-Page{
+  margin-left: 60px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+#newsletterButton{
+  width: 50%;
+	padding: 10px;
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	margin-top: 20px;
+	display: block;
+	margin-left:68px;
+}
+label{
+  font-family:Integral CF Main Heading;
+  font-size: small;
+}
+footer{
+    background-color: white;
+    margin-top: 40px;
+}
+.footer-buttons{
+    display: inline-block;
+    position: relative;
+    right: -200px;
+    margin-right: px;
+    font-family:Integral CF;
+}
+
+.footer-text{
+    display: inline-block;
+    margin-right: 100px;
+    margin-left: 250px;
+    font-family: Integral CF;
+}
