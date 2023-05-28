@@ -1,0 +1,178 @@
+.heading, .logo,.button-section{
+    display: inline-block;
+}
+@font-face {
+    font-family: Integral CF Main Heading;
+    src: url(Demo_Fonts/Fontspring-DEMO-integralcf-bold.otf);
+}
+@font-face {
+    font-family: Integral CF;
+    src: url(Demo_Fonts/Fontspring-DEMO-integralcf-demiboldoblique.otf);
+}
+.h1{
+    margin-top: 0%;
+    padding-top: 0%;
+}
+.heading{
+    margin-left: 150px;
+    margin-right: 250px;
+    position: relative;
+    top: -27px;
+    font-family:"Integral CF Main Heading";
+    font-size: larger;
+}
+.button-section{
+    margin-left: 700px;
+    position: relative;
+    top: -97px;
+}
+.button-text{
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+    font-family: Integral CF Main Heading;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 10px;
+}
+.button-text :hover{
+    color:black;
+    border: 2px;
+    opacity:  0.8;
+    transition-duration: 0.1s;
+}
+.navi-buttons{
+    border: none;
+    background-color:white;
+    color: grey;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+.navi-buttons :hover{
+    color:black;
+    border: 2px;
+    opacity:  0.8;
+    transition-duration: 0.1s;
+}
+.navi-buttons :active{
+    color:rgb(6, 103, 110);
+    opacity: 0.60;
+    transition-duration: 0.1s;
+}
+
+.signup-button{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 10px;
+    margin-right: px;
+    position: relative;
+    margin-left: 40px;
+}
+.signup-button :hover{
+    color: #000;
+    transition-duration: 0.2s;
+    
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+    color:#00747C;
+}
+/* Style the thumbnail images */
+.thumbnail {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 5px;
+    cursor: pointer;
+    margin-top:-10px;
+    margin-bottom:100px;
+    
+}
+
+/* Style the selected thumbnail */
+.selected {
+    border: 2px solid black;
+}
+
+/* Style the large image container */
+.large-image {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left:20px;
+    margin-bottom:20px;
+}
+
+/* Style the large image */
+.large-image img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 40px;
+    border: 2px solid black;
+}
+
+/* Style the image description */
+.description {
+    font-size: 28px;
+    text-align: center;
+    color:black;
+    font-weight: bold;
+}
+.container{
+    width:100%;
+    background:white;
+    color:#fff;
+    position:absolute;
+    margin-top: 0px;
+}
+
+#head{
+    margin-top: 30px;
+    margin-bottom:30px;
+    text-align: center;
+    color:#04B5D9;
+    font-size:84px;
+    font-family:Integral CF Main Heading;
+    letter-spacing:7px;
+}
+
+#image-description{
+    float:right;
+    width:50%;
+    margin-left:550px;
+    margin-top:-520px;
+    margin-bottom:20px;
+}
+.image-background{
+    background-color: #65908C;
+    height: 1000px;
+}
+footer{
+    background-color: white;
+   
+}
+.footer-buttons{
+    display: inline-block;
+    position: relative;
+    right: -200px;
+    font-family: Integral CF Main Heading;
+}
+
+.footer-text{
+    display: inline-block;
+    margin-right: 100px;
+    margin-left: 350px;
+    font-family:  Integral CF Main Heading;
+}
+

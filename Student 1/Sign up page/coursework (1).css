@@ -1,0 +1,280 @@
+@font-face {
+    font-family: Integral CF Main Heading;
+    src: url(Demo_Fonts/Fontspring-DEMO-integralcf-bold.otf);
+}
+@font-face {
+    font-family: Integral CF;
+    src: url(Demo_Fonts/Fontspring-DEMO-integralcf-demiboldoblique.otf);
+}
+  #headingsignup{
+	text-align:left;
+	color:black;
+	font-family:Integral CF Main Heading;
+	font-size:60px;
+	margin:5px;
+	margin-left :90px;
+	margin-top: 70px;
+
+  }
+.heading, .logo,.button-section{
+    display: inline-block;
+}
+
+.h1{
+    margin-top: 0%;
+    padding-top: 0%;
+}
+.heading{
+    margin-left: 100px;
+    margin-right: 120px;
+    position: relative;
+    top: -27px;
+    font-family:"Integral CF Main Heading";
+    font-size: larger;
+    
+}
+.button-section{
+    margin-left: 50px;
+    position: relative;
+    top: -27px;
+}
+.button-text{
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+    font-family: Integral CF Main Heading;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 10px;
+}
+.button-text :hover{
+    color:black;
+    border: 2px;
+    opacity:  0.8;
+    transition-duration: 0.1s;
+}
+.navi-buttons{
+    border: none;
+    background-color:white;
+    color: grey;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+.navi-buttons :hover{
+    color:black;
+    border: 2px;
+    opacity:  0.8;
+    transition-duration: 0.1s;
+}
+.navi-buttons :active{
+    color:rgb(6, 103, 110);
+    opacity: 0.60;
+    transition-duration: 0.1s;
+}
+
+.signup-button{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 10px;
+    margin-right: px;
+    position: relative;
+    margin-left: 40px;
+}
+.signup-button :hover{
+    color: #000;
+    transition-duration: 0.2s;
+    
+}
+form {
+	width: 70%;
+	margin: 80px ;
+	
+  }
+
+  .form-group {
+	margin: none;
+	font-size: 18px;
+	padding:10px; 
+	width:200px;
+  }
+
+  label {
+	display: block;
+	margin-bottom: 5px;
+	font-family:'Integral CF',sans-serif;
+	
+  }
+
+  input, select, textarea {
+	width: 30%;
+	padding: 0.5rem;
+	font-size: 20px;
+  }
+
+  #name{
+	  border: none;
+	  background: transparent;
+	  border-bottom: 1px solid black;
+	  width:500px;
+	  outline:none;
+	  margin-bottom:20px;
+	  
+	  
+  }
+  #name:active{
+	  border: none;
+	  background: transparent;
+	  border-bottom: 1px solid white;
+  }
+  
+  #date{
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid black;
+	margin: none;
+	width: 300px;
+	padding: none;
+	outline: none;
+	margin-bottom:40px;
+	font-size: 18px;
+	padding-top:30px;
+  }
+  
+  #gender {
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid black;
+	margin: none;
+	width: 320px;
+	padding: 8px;
+	padding-bottom:8px;
+	outline: none;
+	display:inline;
+	font-size: 16px;
+	margin-bottom:20px;
+  }
+
+  
+  button[type="submit"] {
+	width: 53%;
+	padding: 10px;
+	background-color: black;
+	color: white;
+	font-size: 24px;
+	cursor:pointer;
+	margin: 20px auto;
+	display: block;
+	margin-left:11px;
+  }
+
+  #email{
+	  border: none;
+	  background: transparent;
+	  border-bottom: 1px solid black;
+	  margin: none;
+	  width:500px;
+	  padding:none;
+	  outline:none;
+	  
+  }
+  #subpage1 {
+	display: none;
+  }
+ 
+  body{
+	  margin:0px;
+	  padding:0px; 
+	  background-image: url('Manbackground.png');
+	  background-position:fixed;
+	  background-size: cover;
+
+  }
+
+  
+  #physical-activity{
+	  display:inline-block;
+	  border: none;
+	  background: transparent;
+	  border-bottom: 1px solid black;
+	  margin: none;
+	  width:500px;
+	  padding:none;
+	  outline:none;
+	  margin-bottom:20px;
+	  
+  }
+  #food-intake{
+	  display:inline-block;
+	  border: none;
+	  background: transparent;
+	  border-bottom: 1px solid black;
+	  margin: none;
+	  width:500px;
+	  padding:none;
+	  outline:none;
+	  margin-bottom:20px;
+	  
+  }
+  #workout-time{
+	  display:inline-block;
+	  border: none;
+	  background: transparent;
+	  border-bottom: 1px solid black;
+	  margin: none;
+	  width:350px;
+	  padding:none;
+	  outline:none;
+	  margin-bottom:20px;
+	  
+  }
+  #meals{
+	  display:inline-block;
+	  border: none;
+	  background: transparent;
+	  border-bottom: 1px solid black;
+	  margin: none;
+	  width:350px;
+	  padding:none;
+	  outline:none;
+	  margin-bottom:20px;
+  }
+ 
+.login-container {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	margin-left:15px;
+	text-decoration: none;
+}
+
+.login-container p {
+	margin-right: 10px;
+	font-family:'Integral CF',sans-serif;
+	margin-top:5px;
+}
+
+.login-container a{
+	color:black;
+	text-decoration: none;
+	font-family:'Integral CF',sans-serif;
+	margin-top:-11px;
+}
+
+.logo-pic{
+	margin-top:20px;
+	margin-left:10px;
+}
+
+.back-ground{
+	margin-left: 10px;
+	margin-bottom:5px;
+}
+
+
+
+

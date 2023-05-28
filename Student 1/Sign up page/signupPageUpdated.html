@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+		<link rel = "stylesheet" type = "text/css" href = "coursework (1).css">
+		
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+			  <img class="logo-pic" src="logo.png" alt="logo">
+			</div>
+			<div class="heading">
+			  <h1>FITZEN</h1>
+			</div>
+			<div class="button-section">
+			  <button class="navi-buttons">
+				<a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%203/Online%20store/Buying%20product.html" target="_blank">Online store</a>
+			  </button>
+			  <button class="navi-buttons">
+				  <a class="button-text" href="C:\Users\LAKIDU\Downloads\Web technology assignment\Student 4\My List page\mylist.html" target="_blank">My list </a>
+			  </button>
+			  <button class="navi-buttons">
+				  <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%201/Gallery%20page/gallerypage.html" target="_blank">Healthy foods</a>
+			  </button>
+			  <button class="signup-button" >
+				  <a class="button-text" href="#" target="_blank">Signup login</a>
+			  </button>
+			</div>
+		</header>
+		
+	<div class="Background-image"></div>
+	    <br>
+		<br>
+	<div class="back-ground">
+		<h1 id="headingsignup">SIGN UP</h1>
+		<form id="signup-form">
+		  <div class="form-group">
+			<label for="name">&nbsp NAME:</label>
+			<input type="text" id="name" name="name" >
+		  </div>
+		  <div class="form-group">
+			<label for="DATE OF BIRTH">&nbsp DATE OF BIRTH:</label>
+			<input type="date" id="date" name="date" >			
+			<label for="gender">&nbsp GENDER:</label>
+			<select id="gender" name="gender" >
+				<option value="" disabled selected></option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="other">Other</option>
+			</select>
+		  </div>
+		
+		  <div class="form-group">
+			<label for="email">&nbsp EMAIL:</label>
+			<input type="email" id="email" name="email" >
+		  </div>
+		  <button type="submit" hre>NEXT</button>
+		  <div class="login-container">
+		  <p>ALREADY A MEMBER?</p>
+		  	<a href="C:\Users\LAKIDU\Downloads\Web technology assignment\Student 1\Login page\login.html" target="_blank">LOGIN</a>
+		  </div>
+        </form>
+		<br>
+
+		<div id="subpage1">
+			
+			<form id="subpage1-form">
+				<div class="form-group">
+				  <label for="physical-activity">PHYSICAL ACTIVITY:</label>
+				  <input type="text" id="physical-activity" name="physical-activity" list="search">
+				  <datalist id="search">
+					<option value="Cardio-Vascular">
+						<option value="Strength Training">
+						<option value="Yoga and Pilates">
+						<option value="Sports">
+						<option value="Outdoor activities">
+						<option value="Dancing">
+						<option value="Martial arts">
+					</option>
+				  </datalist>
+				</div>
+				<div class="form-group">
+				  <label for="food-intake">FOOD INTAKE:</label>
+				  <input type="text" id="food-intake" name="food-intake" list="search-list">
+				  <datalist id="search-list">
+					<option value="Vegetarian">
+						<option value="Low-Carb">
+						<option value="Fast-food">
+						<option value="Paleo">
+						<option value="Flexitarian">
+						<option value="Mediterranean">
+						<option value="Gluten-free">
+					</option>
+				  </datalist>
+				</div>
+				<div class="form-group">
+				  <label for="workout-time">TIME OF WORKOUTS:</label>
+				  <input type="time" id="workout-time" name="workout-time">
+				</div>
+				<div class="form-group">
+				  <label for="meals">NO OF MEALS PER DAY:</label>
+				  <input type="text" id="meals" name="meals" list="search-menu">
+				  <datalist id="search-menu">
+					<option value="1">
+						<option value="2">
+						<option value="3">
+						<option value="4">
+					</option>
+				  </datalist>
+				</div>
+				<button type="submit">Next</button>
+				<div class="login-container">
+					<p>ALREADY A MEMBER?</p>
+					<a href="C:\Users\LAKIDU\Downloads\Web technology assignment\Student 1\Login page\login.html" target="_blank">LOGIN</a>
+				</div>
+			</form>
+			
+		</div>
+		<br>
+    <footer>
+        <p class="footer-text">Copyright &copy; 2023 FITZEN</p>
+      <div class="footer-buttons">
+  
+        <button class="navi-buttons">
+          <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%201/Editors%20page/editorspageNikoya.html">editors page</a>
+        </button>
+      </div>
+    </footer>
+		<script>
+			// get form elements
+			const signupForm = document.getElementById("signup-form");
+			const subpage1Form = document.getElementById("subpage1-form");
+
+			// get form buttons
+			const nextBtn1 = document.querySelector("#signup-form button[type='submit']");
+			const nextBtn2 = document.querySelector("#subpage1-form button[type='submit']");
+
+			// get form pages
+			const page1 = document.getElementById("signup-form");
+			const page2 = document.getElementById("subpage1");
+
+			// listen for form submissions
+			signupForm.addEventListener("submit", (e) => {
+			// prevent form from submitting
+			e.preventDefault();
+
+			// validate form fields
+			const name = signupForm.elements["name"].value;
+			
+			const fname = name.split(" ")[0];
+			const lname = name.split(" ")[1];
+			const date = signupForm.elements["date"].value;
+			const gender = signupForm.elements["gender"].value;
+			const email = signupForm.elements["email"].value;
+
+			if (fname === "" || lname===""|| date === "" || gender === "" || email === "") {
+				alert("Please fill out all required fields");
+				return;
+			}
+
+			const nameRegex = /^[A-Za-z]+$/;
+			if (!nameRegex.test(fname) || !nameRegex.test(lname)) {
+				alert("Name should contain only letters");
+				return;
+			}
+			if (name.split(" ").length>2||name.split(" ").length<2){
+				alert("Enter the full name(first name and last name)");
+				return;
+			}
+
+
+			if (fname === "" || lname===""|| date === "" || gender === "" || email === "") {
+				alert("Please fill out all required fields");
+				return;
+			}
+
+			// show subpage 1
+			page1.style.display = "none";
+			page2.style.display = "block";
+			});
+
+			subpage1Form.addEventListener("submit", (e) => {
+			// prevent form from submitting
+			e.preventDefault();
+
+			// validate form fields
+			const physicalActivity = subpage1Form.elements["physical-activity"].value;
+			const foodIntake = subpage1Form.elements["food-intake"].value;
+			const workoutTime = subpage1Form.elements["workout-time"].value;
+			const meals = subpage1Form.elements["meals"].value;
+
+			if (physicalActivity === "" || foodIntake === "" || workoutTime === "" || meals === "") {
+				alert("Please fill out all required fields");
+				return;
+			}
+
+			// submit form data
+			alert("Dear "+ signupForm.elements["name"].value.split(" ")[0]+" thank you for using Fitzen, The results will be shown in a while!");
+			});
+
+
+		</script>	
+	</div>
+	</body>	
+</html>

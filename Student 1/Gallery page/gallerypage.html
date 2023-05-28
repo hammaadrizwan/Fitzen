@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HEALTHY FOODS</title>
+    <link rel="stylesheet" href="gaall.css">
+</head>
+<body>
+	<header>
+        <div class="logo">
+          <img class="logo-pic" src="logo.png" alt="logo">
+        </div>
+        <div class="heading">
+          <h1>FITZEN</h1>
+        </div>
+        <div class="button-section">
+		  <button class="navi-buttons">
+			<a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%203/Online%20store/Buying%20product.html" target="_blank">Online store</a>
+		  </button>
+		  <button class="navi-buttons">
+			  <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%204/My%20List%20page/mylist.html" target="_blank">My list </a>
+		  </button>
+		  <button class="navi-buttons">
+			  <a class="button-text" href="#" target="_blank">Healthy foods</a>
+		  </button>
+		  <button class="signup-button" >
+			  <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%201/Sign%20up%20page/signupPageUpdated.html" target="_blank">Signup login</a>
+		  </button>
+		</div>
+    </header>
+	
+	<h1 id="head">HEALTHY FOODS</h1>
+	<div class="image-background">
+		<br>
+		<br>
+
+		<div class="imgback-ground"></div>
+		<div class="gallery">
+			<img class="thumbnail" src="pic.jpg" alt="Grilled chicken with vegetables is a healthy and delicious dish that features juicy and flavorful chicken breasts alongside a colorful variety of grilled vegetables. The chicken is often marinated in a blend of herbs, spices, and citrus juices to infuse it with extra flavor, while the vegetables are brushed with olive oil and seasoned with salt and pepper before being grilled until they are tender and slightly charred. This dish is a perfect option for those who want to enjoy a satisfying meal that is packed with nutrients and bursting with flavor. It's a great way to get in your daily dose of veggies and protein in one delicious dish!">
+			<img class="thumbnail" src="site-smoothie.jpg" alt="Green smoothie bowl is a nutritious and refreshing breakfast or snack option made by blending together a variety of fresh fruits and vegetables with almond milk or coconut water, and topping it with delicious ingredients like sliced fruits, nuts, and seeds. This meal is packed with essential vitamins, minerals, and antioxidants, making it a great way to boost your overall health and wellbeing. Green smoothie bowls are easy to customize and enjoy at any time of the day, making them a delicious and healthy addition to your diet.">
+			<img class="thumbnail" src="pic2.jpg" alt="Quinoa salad with avocado and mango is a healthy and flavorful meal made by combining cooked quinoa with diced mango, avocado, red onion, and cilantro. A tangy dressing made from lime juice, olive oil, honey, and salt adds the perfect balance of sweet and savory flavors. This salad is a great source of protein, fiber, and healthy fats, making it a perfect option for those who are looking to eat clean or add more plant-based protein to their diet. It is easy to customize and can be enjoyed as a main course or side dish, making it a versatile and delicious addition to any meal.">
+			<img class="thumbnail" src="pic3.jpg" alt="Roasted sweet potato and black bean tacos are a delicious and healthy meal made by roasting diced sweet potatoes until tender and combining them with black beans, red onion, and flavorful spices. Topped with fresh cilantro, crumbled feta cheese, and a squeeze of lime juice, these tacos are packed with essential nutrients such as fiber, vitamins, and protein. This dish is easy to customize with your favorite toppings and can be enjoyed as a satisfying main course or as a fun and flavorful appetizer. The combination of sweet and savory flavors makes these tacos a delicious and nutritious addition to your meal repertoire.">
+			<img class="thumbnail" src="pc4.jpg" alt="Banana oat pancakes are a delicious and nutritious breakfast option made by blending together rolled oats, banana, eggs, and milk. The batter is then cooked on a griddle until golden brown, creating fluffy and satisfying pancakes that are packed with fiber, protein, and essential vitamins. These pancakes are easy to make and can be customized with your favorite toppings such as fresh fruit, honey, or nut butter. They are a perfect meal for those who are looking for a healthy and satisfying breakfast that will keep them full and energized throughout the day. Try making banana oat pancakes for your next breakfast and enjoy a delicious and nutritious start to your day!">
+		</div>
+
+		<div class="large-image">
+		<img id="main-image" src="" alt="">
+		<p class="description" id="image-description"></p>
+		</div>
+		
+		
+	
+		<script>
+			// Get all the thumbnail images
+			const thumbnails = document.querySelectorAll('.thumbnail');
+	
+			// Get the main image and image description elements
+			const mainImage = document.getElementById('main-image');
+			const imageDescription = document.getElementById('image-description');
+	
+			// Set up an event listener for each thumbnail
+			thumbnails.forEach(thumbnail => {
+				thumbnail.addEventListener('click', () => {
+					// Remove the selected class from all thumbnails
+					thumbnails.forEach(t => t.classList.remove('selected'));
+	
+					// Add the selected class to the clicked thumbnail
+					thumbnail.classList.add('selected');
+	
+					// Set the main image source and alt text to the clicked thumbnail's attributes
+					mainImage.src = thumbnail.src;
+					mainImage.alt = thumbnail.alt;
+	
+					// Set the image description to the clicked thumbnail's alt text
+					imageDescription.textContent = thumbnail.alt;
+				});
+			});
+		</script>
+	</div>
+	
+	<footer>
+		<p class="footer-text">Copyright &copy; 2023 FITZEN</p>
+	  <div class="footer-buttons">
+  
+		<button class="navi-buttons">
+		  <a class="button-text" href="C:\Users\LAKIDU\Downloads\Web technology assignment\Student 1\Editors page\editorspageNikoya.html">editors page</a>
+		</button>
+	  </div>
+	</footer>
+	
+</body>
+</html>

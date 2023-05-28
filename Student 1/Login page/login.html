@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+		<link rel = "stylesheet" type = "text/css" href = "login.css">
+		
+	</head>
+	<body>
+		
+		<header>
+			<div class="logo">
+			  <img class="logo-pic" src="logo.png" alt="logo">
+			</div>
+			<div class="heading">
+			  <h1>FITZEN</h1>
+			</div>
+			<div class="button-section">
+			  <button class="navi-buttons">
+				<a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%203/Online%20store/Buying%20product.html" target="_blank">Online store</a>
+			  </button>
+			  <button class="navi-buttons">
+				  <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%204/My%20List%20page/mylist.html" target="_blank">My list </a>
+			  </button>
+			  <button class="navi-buttons">
+				  <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%201/Gallery%20page/gallerypage.html" target="_blank">Healthy foods</a>
+			  </button>
+			  <button class="signup-button" >
+				  <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%201/Sign%20up%20page/signupPageUpdated.html" target="_blank">Signup login</a>
+			  </button>
+			</div>
+		</header>
+		
+		
+
+	<div class="Background-image"></div>
+	<div class="back-ground">
+		<h1 id="headingLogin">LOGIN</h1>
+		<form id="signup-form">
+		  <div class="form-group">
+			<label for="name">NAME:</label>
+			<input type="name" id="name" name="name" >
+		  </div>
+		  
+		  <div class="form-group">
+			<label for="email">EMAIL:</label>
+			<input type="email" id="email" name="email" >
+		  </div>
+          <button type="submit">LOGIN</button>
+        </form>
+    </div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br><br>
+	<br>
+	<br>
+	<br>
+	<br>
+    <footer>
+        <p class="footer-text">Copyright &copy; 2023 FITZEN</p>
+      <div class="footer-buttons">
+  
+        <button class="navi-buttons">
+          <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%201/Editors%20page/editorspageNikoya.html">editors page</a>
+        </button>
+      </div>
+    </footer>
+	
+	<script>
+		const signupForm = document.getElementById("signup-form");
+
+		const nextBtn1 = document.querySelector("#signup-form button[type='submit']");
+		
+
+		// get form pages
+		const page1 = document.getElementById("signup-form");
+
+		// listen for form submissions
+		signupForm.addEventListener("submit", (e) => {
+		// prevent form from submitting
+		e.preventDefault();
+
+		const name = signupForm.elements["name"].value;
+		const fname = name.split(" ")[0];
+		const lname = name.split(" ")[1];
+		const email = signupForm.elements["email"].value;
+
+		if (email === ""||name === "") {
+			alert("Please fill out all required fields");
+			return;
+		}
+		const nameRegex = /^[A-Za-z]+$/;
+		if (!nameRegex.test(fname) || !nameRegex.test(lname)) {
+			alert("Name should contain only letters");
+			return;
+		}
+		if (name.split(" ").length>2||name.split(" ").length<2){
+			alert("Enter the full name(first name and last name)");
+			return;
+		}
+
+		alert("Dear "+ signupForm.elements["name"].value.split(" ")[0]+" thank you for using Fitzen, The results will be shown in a while!");
+		});
+
+		
+</script>
+    </body>
+</html>
+
+
+       
+        

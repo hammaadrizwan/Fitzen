@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Integral CF Main Heading;
+    src: url(Demo_Fonts/Fontspring-DEMO-integralcf-bold.otf);
+}
+
+body{
+	background-color: black;
+}
+
+h1{
+	color:white;
+	font-size: 150px;
+	letter-spacing: 10px;
+	font-family: Integral CF Main Heading;
+}
+ h2{
+	font-size: 70px;
+	color:white;
+	font-family: Integral CF Main Heading;
+	margin-top:-90px;
+	letter-spacing: 10px;
+ }
+
+ h3{
+	color:white;
+	letter-spacing: 5px;
+	font-size:50px;
+	font-family: Integral CF Main Heading;
+	background-color: grey;
+	display: inline;
+	padding-bottom: 10px;
+}
+
+h4{
+	color:white;
+	letter-spacing:5px ;
+	font-size: 20px;
+	font-family: Integral CF Main Heading;
+}
