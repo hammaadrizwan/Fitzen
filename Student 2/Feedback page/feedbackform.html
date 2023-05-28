@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Give us your Feedback</title>
+	<link rel="stylesheet" type="text/css" href="feedbackstyle.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+   
+</head>
+<header>
+    <div class="logo">
+      <img class="logo-pic" src="logo.png" alt="logo">
+    </div>
+    <div class="heading">
+      <h1>FITZEN</h1>
+    </div>
+    <div class="button-section">
+	  <button class="navi-buttons">
+		<a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%203/Online%20store/Buying%20product.html" target="_blank">Online store</a>
+	  </button>
+	  <button class="navi-buttons">
+		  <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%204/My%20List%20page/mylist.html" target="_blank">My list </a>
+	  </button>
+	  <button class="navi-buttons">
+		  <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%201/Gallery%20page/gallerypage.html" target="_blank">Healthy foods</a>
+	  </button>
+	  <button class="signup-button" >
+		  <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%201/Sign%20up%20page/signupPageUpdated.html" target="_blank">Signup login</a>
+	  </button>
+	</div>
+</header>
+<br>
+<br>
+<br>
+<br>
+<body>
+    
+    
+    <div class="container">
+        <form name="feedbackForm">
+            <h1 class="form-heading">Send us your Feedback</h1>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email">
+    
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="comment" placeholder="Enter your comment"></textarea>
+
+            <div class="buttons">
+                <input type="submit" value="Submit" id="submitButton">
+                <input type="reset" value="Reset">
+            </div>
+            <div class="rating">
+                <input type="radio" name="star" id="star1" value="5">
+                <label for="star1"></label>
+                <input type="radio" name="star" id="star2" value="4">
+                <label for="star2"></label>
+                <input type="radio" name="star" id="star3" value="3">
+                <label for="star3"></label>
+                <input type="radio" name="star" id="star4" value="2">
+                <label for="star4"></label>
+                <input type="radio" name="star" id="star5" value="1">
+                <label for="star5"></label>
+            </div>
+        </form>
+    </div>
+    <br>
+    
+</body>
+<footer>
+    <p class="footer-text">Copyright &copy; 2023 FITZEN</p>
+  <div class="footer-buttons">
+
+    <button class="navi-buttons">
+      <a class="button-text" href="C:\Users\LAKIDU\Downloads\Web technology assignment\Student 2\Editors page\EditorsPageEsandu.html">editors page</a>
+    </button>
+  </div>
+</footer>
+
+<script>
+    function validateForm() { // the function
+    var name = document.forms["feedbackForm"]["name"].value;//getting the user entered name
+    var email = document.forms["feedbackForm"]["email"].value;//getting the user entered email
+    var comment = document.forms["feedbackForm"]["comment"].value;//getting the user entered comment
+
+    if (name == "" || email == "" || comment == "") {// checking if the user entered values are empty
+        alert("Please fill in all the required fields.");//if empty a pop up message appears
+        return false;
+    }
+
+    // Checking if any star is selected
+    var stars = document.getElementsByName("star");
+    var starValue = ""; // to store the number of star selected
+    for (var i = 0; i < stars.length; i++) {//finding the star whether they are 
+        if (stars[i].checked) {
+            starValue = stars[i].value;
+            break;
+        }
+
+    }
+    if (starValue == "") {//checking if user selected a star ,
+        alert("Please select a star rating.");
+        return false;
+    }
+    //displaying the full message after user submits correctly with what the user commented
+    alert("Dear "+ name + ", Thank you very much for your feedback, " +" Your comment was "+ '"'+comment+'"'+" and you have rated us " + starValue + " stars.");
+    return true;
+}
+    // Adding event listener to the submit button
+const subButton = document.getElementById("submitButton");
+subButton.addEventListener("click", validateForm);
+
+
+</script>
+</html>

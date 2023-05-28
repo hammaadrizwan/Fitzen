@@ -1,0 +1,274 @@
+.heading, .logo,.button-section{
+    display: inline-block;
+}
+
+@font-face {
+    font-family: Integral CF Main Heading;
+    src: url(Demo_Fonts/Fontspring-DEMO-integralcf-bold.otf);
+}
+
+@font-face {
+    font-family: Integral CF;
+    src: url(Demo_Fonts/Fontspring-DEMO-integralcf-demiboldoblique.otf);
+}
+
+.h1{
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+.slogan-pic{
+  margin-left: 210px;
+}
+
+.heading{
+    margin-left: 100px;
+    margin-right: 120px;
+    position: relative;
+    top: -27px;
+    font-family:"Integral CF Main Heading";
+    font-size: larger;
+    
+}
+.button-section{
+    left: 170px;
+    position: relative;
+    top: -27px;
+}
+
+.button-text{
+    text-decoration: none;
+    font-weight: bold;
+    color: #808080;
+    font-family: Integral CF Main Heading;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 10px;
+}
+.button-text :hover{
+    color:black;
+    border: 2px;
+    opacity:  0.8;
+    transition-duration: 0.1s;
+}
+.navi-buttons{
+    border: none;
+    background-color:white;
+    color: grey;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+.navi-buttons :hover{
+    color:black;
+    border: 2px;
+    opacity:  0.8;
+    transition-duration: 0.1s;
+}
+.navi-buttons :active{
+    color:rgb(6, 103, 110);
+    opacity: 0.60;
+    transition-duration: 0.1s;
+}
+
+.signup-button{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 10px;
+    margin-right: px;
+    position: relative;
+    margin-left: 40px;
+}
+.signup-button :hover{
+    color: #000;
+    transition-duration: 0.2s;
+    
+}
+.text-block1{
+    margin-left: 260px;
+    display: inline-block;
+    font-family:Integral CF Main Heading;
+    font-weight: bold;
+}
+.text-block2{
+    display: inline-block;
+    margin-left: 470px;
+    font-family:Integral CF Main Heading;
+}
+
+.pic1{
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 5px;
+    display: inline-block;
+}
+.main-text-block{
+    display: block;
+}
+.highlighted{
+    color: #21a5da;
+}
+.pic2{
+    height: 300px;
+    width: 500px;
+    display: inline-block;
+    margin-left: 120px;
+}
+.main-block1{
+    font-family:Integral CF;
+    font-weight: bolder;
+    font: size 20px;;
+}
+
+.main-block2{
+    background-color: rgb(58, 57, 57);
+    height: 1000px;
+    margin-top: 50px;
+    
+}
+
+#main-text {
+    line-height: 3px;
+}
+
+.left-block{
+    margin-left: 60px;
+    background-color: black;
+    color: antiquewhite;
+    display: inline-block;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    height: 400px;
+    width: 500px;
+    position: relative;
+    top: -12px;
+
+}
+
+.pic3{
+    height: 150px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+#quiz-button{
+    margin-left: 160px;
+    position: relative;
+    top: -83px;
+    padding: 5px;
+
+}
+
+.right-block{
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    position: relative;
+    top:90px;
+    margin-left: 190px;
+    height:400px;
+    width: 500px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    line-height: 7px;
+}
+
+.pic4{
+    height: 320px;
+    text-align: left;
+    margin-left: 20px;
+
+}
+
+#rightside-button{
+    background-color: rgb(58, 57, 57);
+    margin-left: 240px;
+    position: relative;
+    top: -190px;
+    display: inline-block;
+    font-family:Integral CF Main Heading;
+    padding: 10px;
+
+    
+}
+    
+.white-button-text{
+    color: white;
+    text-decoration: none;
+}
+
+.shop-text{
+    display: inline-block;
+    position: relative;
+    top: -100px;
+    right: -100px;
+}
+
+.myList-text{
+    display: inline-block;
+    position: relative;
+    top: -130px;
+    right: -120px;
+
+}
+
+.pic5{
+    height: 260px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+#IIrow-left-block{
+    position: relative;
+    margin-top: 100px;
+    top: -65px;
+}
+
+#food-button{
+    position: relative;
+    top: -130px;
+    left: 13px;
+    padding: 5px;
+}
+.food-text{
+    display: inline-block;
+    position: relative;
+    top: -100px;
+    left: 140px;
+}
+.pic6{
+    text-align: left;
+    height: 320px;
+    margin-right: 20px ;
+}
+
+#IIrow-right-block{
+    position: relative;
+    top: -70px;
+}
+
+footer{
+    background-color: white;
+    margin-top: 40px;
+}
+
+.footer-buttons{
+    display: inline-block;
+    position: relative;
+    right: -200px;
+    margin-right: px;
+    font-family:Integral CF;
+}
+
+.footer-text{
+    display: inline-block;
+    margin-right: 100px;
+    margin-left: 110px;
+    font-family: Integral CF;
+}

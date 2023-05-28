@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fitness Quiz</title>
+	<link rel="stylesheet" type="text/css" href="quizstyle.css">
+	
+</head>
+<header>
+	<div class="logo">
+	  <img class="logo-pic" src="logo.png" alt="logo">
+	</div>
+	<div class="heading">
+	  <h1>FITZEN</h1>
+	</div>
+	<div class="button-section">
+	  <button class="navi-buttons">
+		<a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%203/Online%20store/Buying%20product.html" target="_blank">Online store</a>
+	  </button>
+	  <button class="navi-buttons">
+		  <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%204/My%20List%20page/mylist.html" target="_blank">My list </a>
+	  </button>
+	  <button class="navi-buttons">
+		  <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%201/Gallery%20page/gallerypage.html" target="_blank">Healthy foods</a>
+	  </button>
+	  <button class="signup-button" >
+		  <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%201/Sign%20up%20page/signupPageUpdated.html" target="_blank">Signup login</a>
+	  </button>
+	</div>
+</header>
+<br>
+
+<body>
+
+	
+	<div class="quiz-container">
+		<div class="quiz-header">
+			<h1>Fitness Quiz &#40;time limit <mark style="background-color: rgb(242,116, 87);">5 minutes</mark>&#41;</h1>
+		</div>
+		<div class="quiz-body">
+			<form id="quiz-form" >
+				<div class="question">
+					<h2>Question 1: What is the recommended amount of exercise for adults per week?</h2>
+					<label><input type="radio" name="q1" value="a">a&#41; 30 minutes per day, 3 days a week</label><br>
+					<label><input type="radio" name="q1" value="b">b&#41; 60 minutes per day, 7 days a week</label><br>
+					<label><input type="radio" name="q1" value="c">c&#41; 150 minutes per week, in at least 10-minute intervals</label><br>
+					<label><input type="radio" name="q1" value="d">d&#41; 120 minutes per day, 3 days a week</label><br>
+				</div>
+
+
+				<div class="question">
+					<h2>Question 2: What is the recommended target heart rate during cardiovascular excersice?</h2>
+					<label><input type="radio" name="q2" value="a">a&#41; 50% - 60% of max</label><br>
+					<label><input type="radio" name="q2" value="b">b&#41; 60% - 70% of max</label><br>
+					<label><input type="radio" name="q2" value="c">c&#41; 70% - 80% of max</label><br>
+					<label><input type="radio" name="q2" value="d">d&#41; 50% - 60% of max</label><br>
+				</div>
+
+				<div class="question">
+					<h2>Question 3: What is the best time to exercise?</h2>
+					<label><input type="radio" name="q3" value="a">a&#41; Morning</label><br>
+					<label><input type="radio" name="q3" value="b">b&#41; Afternoon</label><br>
+					<label><input type="radio" name="q3" value="c">c&#41; Evening</label><br>
+					<label><input type="radio" name="q3" value="d">d&#41; depends on that person's preference</label><br>
+				</div>
+				
+				<div class="question">
+					<h2>Question 4: What is not considered as a type of cardiovascular exercise?</h2>
+					<label><input type="radio" name="q4" value="a">a&#41; Running</label><br>
+					<label><input type="radio" name="q4" value="b">b&#41; Swimming</label><br>
+					<label><input type="radio" name="q4" value="c">c&#41; biking</label><br>
+					<label><input type="radio" name="q4" value="d">d&#41; Weightlifting</label><br>
+				</div>
+
+				<div class="question">
+					<h2>Question 5: what does strength training do for fitness?</h2>
+					<label><input type="radio" name="q5" value="a">a&#41; Increases flexibility</label><br>
+					<label><input type="radio" name="q5" value="b">b&#41; Improves balance</label><br>
+					<label><input type="radio" name="q5" value="c">c&#41; Builds muscle mass and strength</label><br>
+					<label><input type="radio" name="q5" value="d">d&#41; Improves endurance</label><br>
+				</div>
+
+				<div class="question">
+					<h2>Question 6: what should a balance fitness routine include?</h2>
+					<label><input type="radio" name="q6" value="a">a&#41; cardiovascular exercise only</label><br>
+					<label><input type="radio" name="q6" value="b">b&#41; strength training only</label><br>
+					<label><input type="radio" name="q6" value="c">c&#41; neither of the above </label><br>
+					<label><input type="radio" name="q6" value="d">d&#41; both of the above</label><br>
+				</div>
+
+				<div class="button-section-inform">
+					<button class="buttons" id="submit-button" >Submit</button>
+					<button class="buttons" id="reset-button" type="reset">Reset</button>
+				</div>
+
+				<div id="marks"></div>
+			</form>
+		</div>
+	</div>
+	<br>
+	
+</body>
+<footer>
+	<p class="footer-text">Copyright &copy; 2023 FITZEN</p>
+  <div class="footer-buttons">
+
+	<button class="navi-buttons">
+	  <a class="button-text" href="C:\Users\LAKIDU\Downloads\Web technology assignment\Student 2\Editors page\EditorsPageEsandu.html">editors page</a>
+	</button>
+
+	<button class="scrollToTop-button" id="scrollToTop-button">&#8593;
+	</button>
+  </div>
+</footer>
+
+<script>
+		const scrollToTopButton = document.getElementById("scrollToTop-button");//getting the button using id
+	//using event listener 
+	scrollToTopButton.addEventListener("click", (e)=> {//so when the button is clicked this fuctions is follows
+	
+		window.scrollTo({
+		top: 0,
+		behavior: "smooth" //it goes up smoothly, not at once
+		});
+	});
+
+	function calculateMarks() {
+		let marks = 0;
+		var medal;  // variable to store the medal 
+
+		//getting the answer the user selected, each button has a value
+		let q1 = document.querySelector('input[name="q1"]:checked').value; 
+		let q2 = document.querySelector('input[name="q2"]:checked').value;
+		let q3 = document.querySelector('input[name="q3"]:checked').value;
+		let q4 = document.querySelector('input[name="q4"]:checked').value;
+		let q5 = document.querySelector('input[name="q5"]:checked').value;
+		let q6 = document.querySelector('input[name="q6"]:checked').value;
+		
+
+		if (q1 === "b") { // so if the user's answer is b then 2 is added to marks variable or else -1 from marks
+			marks += 2;
+		} else if (q1) {
+			marks -= 1;
+		}
+
+		if (q2 === "c") {
+			marks += 2;
+		} else if (q2) {
+			marks -= 1;
+		}
+
+		if (q3 === "a") {
+			marks += 2;
+		} else if (q3) {
+			marks -= 1;
+		}
+
+		if (q4 === "d") {
+			marks += 2;
+		} else if (q1) {
+			marks -= 1;
+		}
+
+		if (q5 === "c") {
+			marks += 2;
+		} else if (q1) {
+			marks -= 1;
+		}
+
+		if (q6 === "d") {
+			marks += 2;
+		} else if (q1) {
+			marks -= 1;
+		}
+
+		// the medal conditions
+		if (marks<=2 && marks >= 1){
+			medal = "Bronze medal"
+		}
+		else if (marks <= 5 && marks >= 3){
+			medal = "Silver medal"
+		}
+		else if (marks <= 9 && marks >= 6){
+			medal = "GOLD medal"
+		}
+		else if (marks <= 12 && marks >= 10){
+			medal = "Platinum medal"
+		}
+		else if(marks<=0){
+			medal = "no medal"
+		}
+		alert(" Congragulations! Your mark is " + marks + " you have recieved a "+ medal); // Show the mark in a popup message
+	}
+	//adding the event listener for the submit button
+	const submitButton = document.getElementById("submit-button");
+
+	submitButton.addEventListener("click", function(event) {
+			  calculateMarks();
+	});
+
+	var timeLimit = 1 * 120 * 1000; // time limit in milliseconds (1 minute)
+	var timer = setTimeout(function() {
+	// display the time's up message
+	alert("Time's up! if you wish to try again click the quiz button in the main page");
+
+	// close the window
+	window.close();
+	},timeLimit);
+	
+</script>
+</html>
+
+				
