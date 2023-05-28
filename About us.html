@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+	<html>
+	<link rel="stylesheet" type="text/css" href="aboutUs.css">
+	<header>
+        <div class="logo">
+          <img class="logo-pic" src="logo.png" alt="logo">
+        </div>
+        <div class="heading">
+          <h1>FITZEN</h1>
+        </div>
+        <div class="button-section">
+		  <button class="navi-buttons">
+			<a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%203/Online%20store/Buying%20product.html" target="_blank">Online store</a>
+		  </button>
+		  <button class="navi-buttons">
+			  <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%204/My%20List%20page/mylist.html" target="_blank">My list </a>
+		  </button>
+		  <button class="navi-buttons">
+			  <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%201/Gallery%20page/gallerypage.html" target="_blank">Healthy foods</a>
+		  </button>
+		  <button class="signup-button" >
+			  <a class="button-text" href="C:/Users/LAKIDU/Downloads/Web%20technology%20assignment/Student%201/Sign%20up%20page/signupPageUpdated.html" target="_blank">Signup login</a>
+		  </button>
+		</div>
+    </header>
+	<h2 id="sentence" font size="+44"><center>"Meet the team behind FITZEN, dedicated to bringing you the best FITZEN experience."</center></font></h2>
+	
+	<body>
+	<video autoplay muted loop id="myVideo">
+      <source src="C:\Users\LAKIDU\Downloads\Web technology assignment\Student 3\About us page\about us bg video.mp4" type="video/mp4">
+    </video>
+		<div class="container">
+		<div class="card">
+			<img src="C:\Users\LAKIDU\Downloads\Web technology assignment\Student 3\About us page\Student 1.png" alt="Student 1">
+			<div class="info">
+				<h3>Nikoya Samaranayake</h3>
+				<p>Student 1</p>
+			</div>
+		</div>
+		
+		<div class="card">
+			<img src="C:\Users\LAKIDU\Downloads\Web technology assignment\Student 3\About us page\Student 2.png" alt="Student 2">
+			<div class="info">
+				<h3>Esandu Obadaarachchi</h3>
+				<p>Student 2</p>
+			</div>
+	    </div>
+
+		<div class="card">
+			<img src="C:\Users\LAKIDU\Downloads\Web technology assignment\Student 3\About us page\Student 3.png" alt="Student 3">
+			<div class="info">
+				<h3>Lakidu Haputhanthri</h3>
+				<p>Student 3</p>
+			</div>
+		</div>
+
+		<div class="card">
+			<img src="C:\Users\LAKIDU\Downloads\Web technology assignment\Student 3\About us page\Student 4.png" alt="Student 4">
+			<div class="info">
+				<h3>Hammadh Rizwan</h3>
+				<p>Student 4</p>
+			</div>
+		</div>
+	</body>
+	<script>
+	const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
+      // Get the text element
+      const text = document.getElementById("sentence");
+
+      // Set the initial color index to 0
+      let colorIndex = 0;
+
+      // Set the color of the text every second
+      setInterval(() => {
+        // Set the color of the text to the current color in the array
+        text.style.color = colors[colorIndex];
+
+        // Increment the color index
+        colorIndex++;
+
+        // If we've reached the end of the array, start over at the beginning
+        if (colorIndex === colors.length) {
+          colorIndex = 0;
+        }
+      }, 5000);
+    </script>
+	</html>
+	
